@@ -1,12 +1,41 @@
-# React + Vite
+# Om Dalvi - Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and Vite to showcase my skills, projects, and experience.
 
-Currently, two official plugins are available:
+## 🌟 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out my portfolio: [Om Dalvi Portfolio](https://om-dalvi-portfolio.vercel.app/)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design that works on all devices
+- Interactive UI with animations using Framer Motion
+- Sections for skills, projects, experience, education, and contact
+- Contact form with EmailJS integration
+- Modern design with custom styling
+
+## 💻 Technologies Used
+
+- React 19
+- Vite
+- Framer Motion for animations
+- EmailJS for contact form
+- React Icons
+- AOS (Animate On Scroll)
+- CSS3 with custom variables
+
+## 🛠️ Setup and Installation
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Create a `.env` file with your EmailJS credentials:
+4. Run the development server: `npm run dev`
+5. Build for production: `npm run build`
+
+## 📱 Contact
+
+Feel free to reach out to me through the contact form on my website!
+
+## 📝 License
+
+This project is open source and available under the MIT License.
