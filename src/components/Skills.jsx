@@ -30,29 +30,15 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: [
-        { name: "React", icon: <FaReact />, level: 90 },
-        { name: "JavaScript", icon: <SiJavascript />, level: 85 },
-        { name: "Vite", icon: <SiVite />, level: 80 },
-        { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 85 },
-      ]
+      icons: [<FaReact />, <SiJavascript />, <SiVite />, <SiTailwindcss />]
     },
     {
       title: "Backend",
-      skills: [
-        { name: "Node.js", icon: <FaNodeJs />, level: 80 },
-        { name: "Express", icon: <SiExpress />, level: 75 },
-        { name: "MongoDB", icon: <SiMongodb />, level: 85 },
-        { name: "Firebase", icon: <FaFire />, level: 80 },
-      ]
+      icons: [<FaNodeJs />, <SiExpress />, <SiMongodb />, <FaFire />, <FaDatabase />]
     },
     {
       title: "Tools & Deployment",
-      skills: [
-        { name: "Git", icon: <FaGitAlt />, level: 85 },
-        { name: "Vercel", icon: <SiVercel />, level: 90 },
-        { name: "Render", icon: <SiRender />, level: 80 },
-      ]
+      icons: [<FaGitAlt />, <SiVercel />, <SiRender />]
     }
   ];
 
@@ -91,50 +77,43 @@ const Skills = () => {
           <p className="section-subtitle">Technologies I work with</p>
         </motion.div>
 
-        <div className="skills-categories">
+        <motion.div 
+          className="skills-categories-grid"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+        >
           {skillCategories.map((category, index) => (
             <motion.div 
               key={index}
-              className="skill-category"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
-              transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+              className="category-card"
+              variants={itemVariants}
+              whileHover={{ 
+                scale: 1.03,
+                boxShadow: "0 15px 30px rgba(0, 0, 0, 0.2)"
+              }}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               <h3 className="category-title">{category.title}</h3>
-              <motion.div 
-                className="skills-grid"
-                variants={containerVariants}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-              >
-                {category.skills.map((skill, skillIndex) => (
+              <div className="category-icons">
+                {category.icons.map((icon, iconIndex) => (
                   <motion.div 
-                    key={skillIndex} 
-                    className="skill-card"
-                    variants={itemVariants}
+                    key={iconIndex} 
+                    className="icon-wrapper"
                     whileHover={{ 
-                      scale: 1.05,
-                      boxShadow: "0 10px 25px rgba(13, 27, 42, 0.3)"
+                      scale: 1.2,
+                      color: "var(--accent-color)"
                     }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <div className="skill-icon">
-                      {skill.icon}
-                    </div>
-                    <h4 className="skill-name">{skill.name}</h4>
-                    <div className="skill-level-container">
-                      <div 
-                        className="skill-level" 
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    {icon}
                   </motion.div>
                 ))}
-              </motion.div>
+              </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

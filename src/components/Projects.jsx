@@ -32,7 +32,7 @@ const Projects = () => {
       image: project2, // Replace with your actual image
       technologies: ["Open Weather", "Vite", "Tailwind"],
       githubLink: "https://github.com/yourusername/ecommerce-app",
-      liveLink: "https://your-ecommerce-url.com"
+      liveLink: "https://atmos-alert.vercel.app"
     },
     {
       title: "MERN Expense Tracker",
