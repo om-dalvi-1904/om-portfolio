@@ -14,7 +14,7 @@ const Experience = () => {
     {
       company: "Dhanshree Constro Solutions",
       position: "Freelance Application Developer",
-      period: "Nov 2023 - Feb 2024",
+      period: "Nov 2024 - Feb 2025",
       description: [
         ],
       icon: <FaBuilding />
