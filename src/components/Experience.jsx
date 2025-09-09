@@ -12,19 +12,19 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: "Lucero Solutions",
+      position: "SDE Intern",
+      period: "June 2025",
+      description: [" Developed and implemented testing and deployment services on AWS Cloud as a Software Development Intern.", "Acquired hands-on experience in cloud infrastructure, CI/CD pipelines, and deployment automation.", "Ensured smooth integration and performance of applications through rigorous testing and efficient cloud-based deployment strategies.", "Collaborated with the development team to enhance scalable and reliable service delivery."],
+      icon: <FaBuilding />
+    },
+    {
       company: "Dhanshree Constro Solutions",
       position: "Freelance Application Developer",
       period: "Nov 2023 - Feb 2024",
       description: ["Developed custom web and Android applications to enhance construction project management and efficiency.", "Integrated third-party APIs and optimized performance for a seamless user experience."],
       icon: <FaBuilding />
     },
-    {
-      company: "Lucero Solutions",
-      position: "SDE Intern",
-      period: "June 2025",
-      description: [" Developed and implemented testing and deployment services on AWS Cloud as a Software Development Intern.", "Acquired hands-on experience in cloud infrastructure, CI/CD pipelines, and deployment automation.", "Ensured smooth integration and performance of applications through rigorous testing and efficient cloud-based deployment strategies.", "Collaborated with the development team to enhance scalable and reliable service delivery."],
-      icon: <FaBuilding />
-    }
     // You can add more experiences here in the future
   ];
 
