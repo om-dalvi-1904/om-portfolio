@@ -74,11 +74,11 @@ const Experience = () => {
                     </motion.li>
                   ))}
                 </ul>
-                <div className="timeline-skills">
+                {/* <div className="timeline-skills">
                   <div className="skill-tag"><FaCode /> Web Development</div>
                   <div className="skill-tag"><FaMobile /> Android</div>
                   <div className="skill-tag"><FaServer /> API Integration</div>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}
