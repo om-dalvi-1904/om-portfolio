@@ -14,7 +14,6 @@ const Experience = () => {
     {
       company: "Dhanshree Constro Solutions",
       position: "Freelance Application Developer",
-<<<<<<< HEAD
       period: "Nov 2023 - Feb 2024",
       description: ["Developed custom web and Android applications to enhance construction project management and efficiency.", "Integrated third-party APIs and optimized performance for a seamless user experience."],
       icon: <FaBuilding />
@@ -24,11 +23,6 @@ const Experience = () => {
       position: "SDE Intern",
       period: "June 2025",
       description: [" Developed and implemented testing and deployment services on AWS Cloud as a Software Development Intern.", "Acquired hands-on experience in cloud infrastructure, CI/CD pipelines, and deployment automation.", "Ensured smooth integration and performance of applications through rigorous testing and efficient cloud-based deployment strategies.", "Collaborated with the development team to enhance scalable and reliable service delivery."],
-=======
-      period: "Nov 2024 - Feb 2025",
-      description: [
-        ],
->>>>>>> 2ab82c8349da31663a7b1d8e4bb3533049fae3b2
       icon: <FaBuilding />
     }
     // You can add more experiences here in the future
