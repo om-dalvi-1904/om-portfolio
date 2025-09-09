@@ -40,7 +40,7 @@ const Projects = () => {
       image: project3, // Replace with your actual image
       technologies: ["React", "Node.js", "MongoDB", "Express.js"],
       githubLink: "https://github.com/om-dalvi-1904/mern-expense-tracker",
-      liveLink: "#"
+      liveLink: ""
     },
     {
       title: "Plant Analysis Tool",
@@ -48,7 +48,7 @@ const Projects = () => {
       image: project4, // Replace with your actual image
       technologies: ["Express", "EJS", "Gemini API",],
       githubLink: "https://github.com/om-dalvi-1904/plant-analysis-tool",
-      liveLink: "#"
+      liveLink: ""
     }
   ];
 
