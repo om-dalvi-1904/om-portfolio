@@ -6,6 +6,7 @@ import project1 from '../assets/project-1.png';
 import project2 from '../assets/project-2.png';
 import project3 from '../assets/project-3.png';
 import project4 from '../assets/project-4.png';
+import project5 from '../assets/project-5.png';
 
 // Import your project images here
 // Example: import project1Image from '../assets/project1.jpg';
@@ -48,6 +49,14 @@ const Projects = () => {
       image: project4, // Replace with your actual image
       technologies: ["Express", "EJS", "Gemini API",],
       githubLink: "https://github.com/om-dalvi-1904/plant-analysis-tool",
+      liveLink: ""
+    },
+    {
+      title: "Data Spark",
+      description: "Data Spark is an AI-powered PDF chat assistant that lets users upload educational documents and ask questions in a conversational interface. It delivers accurate, context-aware answers using the content of the uploaded document.",
+      image: project5,
+      technologies: ["React", "Gemini API", "RAG", "Python", "ChromaDB", "FastAPI"],
+      githubLink: "https://github.com/om-dalvi-1904/data-spark",
       liveLink: ""
     }
   ];
